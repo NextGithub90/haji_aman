@@ -1134,39 +1134,138 @@ h6 {
     margin-bottom: 0;
 }
 
-/* Responsive Design */
+/* Footer Section */
+.footer-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    border-top: 4px solid #28a745;
+}
+
+.footer-content .footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #28a745;
+}
+
+.footer-content .footer-text {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.social-media-icons {
+    text-align: right;
+}
+
+.social-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.social-icon:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* TikTok */
+.social-icon.tiktok:hover {
+    border-color: #ff0050;
+    color: #ff0050;
+    box-shadow: 0 8px 16px rgba(255, 0, 80, 0.2);
+}
+
+/* Instagram */
+.social-icon.instagram:hover, .social-icon.instagram-alt:hover {
+    border-color: #e4405f;
+    color: #e4405f;
+    box-shadow: 0 8px 16px rgba(228, 64, 95, 0.2);
+}
+
+/* YouTube */
+.social-icon.youtube:hover {
+    border-color: #ff0000;
+    color: #ff0000;
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.2);
+}
+
+/* Website */
+.social-icon.website:hover {
+    border-color: #28a745;
+    color: #28a745;
+    box-shadow: 0 8px 16px rgba(40, 167, 69, 0.2);
+}
+
+/* Company Profile */
+.social-icon.company-profile:hover {
+    border-color: #007bff;
+    color: #007bff;
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+
+/* Catalog Haji */
+.social-icon.catalog-haji:hover {
+    border-color: #6f42c1;
+    color: #6f42c1;
+    box-shadow: 0 8px 16px rgba(111, 66, 193, 0.2);
+}
+
+/* Catalog Umroh */
+.social-icon.catalog-umroh:hover {
+    border-color: #fd7e14;
+    color: #fd7e14;
+    box-shadow: 0 8px 16px rgba(253, 126, 20, 0.2);
+}
+
+/* Responsive Design for Footer */
 @media (max-width: 768px) {
-    .cta-main-card {
-        padding: 30px 20px;
+    .social-media-icons {
+        text-align: center;
+        margin-top: 30px;
     }
     
-    .cta-title {
-        font-size: 2rem;
+    .social-icons-container {
+        justify-content: center;
+        gap: 12px;
     }
     
-    .cta-features {
-        margin-bottom: 25px;
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
     }
     
-    .price-badge {
-        margin-bottom: 20px;
-    }
-    
-    .price-amount {
-        font-size: 1.5rem;
-    }
-    
-    .trust-indicators {
-        gap: 25px;
-        padding: 20px;
-    }
-    
-    .trust-item i {
-        font-size: 1.5rem;
-    }
-    
-    .contact-method-card {
-        margin-bottom: 20px;
+    .footer-content {
+        text-align: center;
     }
 }
 
